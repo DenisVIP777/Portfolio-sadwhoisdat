@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Case</title>
+		<meta name="description" content="Краткое емкое описание текста, включающее поисковые запросы пользователей. Тег <description> должен четко и ясно описывать суть содержания, лучше избегать вводных конструкций и общих фраз. Мета-тег <description> должен быть уникальным для каждой страницы сайта.">
+		<meta name="keywords" content="ключевые фразы или слова через запятую (важно для SEO)"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/animate.css">
+		<link href="favicon.ico" rel="icon">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!--preloader-->
+		<div id="preloader" class="preloader">
+			<div class="loader">
+				<span id="load-perc">0</span>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="wrapper__container wrapper__container_case-page">
+				<div class="wrapper__content">
+					<div class="main-content main-content_page-case">
+
+						<div class="video-player" tabindex="0">
+							<div class="video-player__container-buttons">
+								<a href="index.html" class="video-player__button-back">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.44194 7.94194C5.68602 7.69786 5.68602 7.30214 5.44194 7.05806C5.19786 6.81398 4.80213 6.81398 4.55806 7.05806L2.05979 9.55633C2.05417 9.56191 2.04865 9.5676 2.04324 9.57339C1.93888 9.68508 1.875 9.83508 1.875 10C1.875 10.0838 1.89151 10.1638 1.92144 10.2369C1.95195 10.3115 1.99749 10.3814 2.05806 10.4419L4.55806 12.9419C4.80214 13.186 5.19786 13.186 5.44194 12.9419C5.68602 12.6979 5.68602 12.3021 5.44194 12.0581L4.00888 10.625H17.5C17.8452 10.625 18.125 10.3452 18.125 10C18.125 9.65482 17.8452 9.375 17.5 9.375H4.00889L5.44194 7.94194Z" fill="#FCFBFD" />
+									</svg>
+								</a>
+								<div class="video-player__button-open-video-panel button-open-video-panel">
+									<span class="button-open-video-panel__text">Подробнее</span>
+									<svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.4697 1.53033C15.1768 1.23744 15.1768 0.762562 15.4697 0.469669C15.7626 0.176776 16.2374 0.176777 16.5303 0.469671L19.5283 3.4676C19.535 3.4743 19.5416 3.48112 19.5481 3.48807C19.6733 3.6221 19.75 3.8021 19.75 4C19.75 4.1006 19.7302 4.19658 19.6943 4.28424C19.6577 4.37377 19.603 4.45766 19.5303 4.53034L16.5303 7.53034C16.2374 7.82323 15.7626 7.82323 15.4697 7.53034C15.1768 7.23744 15.1768 6.76257 15.4697 6.46968L17.1893 4.75H1C0.585787 4.75 0.25 4.41421 0.25 4C0.25 3.58579 0.585787 3.25 1 3.25H17.1893L15.4697 1.53033Z" fill="#FCFBFD" />
+									</svg>
+								</div>
+							</div>
+
+							<video src="videos/cases/istockphoto-3.mp4" id="my-video" class="video-player__video" tabindex="-1"></video>
+							<div class="video-player__volume-indicator hidden">0%</div>
+							
+							<div class="video__blackout"></div>
+
+							<div class="video-player__container-panel">
+								<div class="video-player__panel" onmousedown="return false" onselectstart="return false">
+									<div class="video-info">
+										<div class="container-video-image">
+											<img src="https://placehold.co/200" class="video-artwork" alt=""/>
+										</div>
+										<div class="video-info__content">
+											<h2 class="video-name">Track Name</h2>
+											<h3 class="video-description">Desc</h3>
+										</div>
+									</div>
+									<div class="video-player__container-controls">
+										<div class="video-player__container-main-buttons" data-da=".video-player__volumes, 850, first">
+											<i class="video-icon _icon-icon-cc"></i>
+
+											<button class="video-player__btn video-player__prev" type="button">
+												<i class="video-player-btn__icon video-player-btn__prev-icon _icon-prev"></i>
+											</button>
+			
+											<button class="video-player__btn video-player__play" type="button" aria-keyshortcuts="k" aria-label="Для активации кнопки Смотреть нажмите k">
+												<i class="video-player-btn__icon video-player-btn__play-icon video-player-btn__icon--play _icon-play"></i>
+											</button>
+			
+											<button class="video-player__btn video-player__next" type="button">
+												<i class="video-player-btn__icon video-player-btn__next-icon _icon-next"></i>
+											</button>
+
+											<i class="video-icon _icon-window-play"></i>
+										</div>
+
+										<div class="video-player__containe-seek">
+											<span class="video-player__current-time">0:00</span>
+											<div class="video-player__timeline timeline" tabindex="0" role="slider" aria-label="Ползунок видео" aria-valuemin="0" aria-valuemax="" aria-valuenow="0" aria-valuetext="">
+												<div class="timeline__progress"></div>
+												<div class="timeline__handle"></div>
+											</div>
+											<span class="video-player__duration">0:00</span>
+										</div>
+									</div>
+
+									<div class="video-player__volumes">
+										<button class="video-player__btn video-player__volume" type="button" aria-keyshortcuts="m" aria-label="Для активации кнопки Отключение звука нажмите m">
+											<i class="video-player-btn__icon video-player-btn__volume-icon video-player-btn__icon--unmuted _icon-volume"></i>
+										</button>
+										<div class="video-player-volume-panel" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="" aria-valuetext="" aria-label="Громкость">
+											<div class="video-player-volume-panel__slider">
+												<div class="video-player-volume-panel__handle">
+													<span class="video-player-volume-panel__handle-span"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="video-info-panel">
+						<div class="video-content__body">
+							<div class="video-content__content">
+								<div class="video-content__semantic_part">
+									<div class="video-content__panel">
+										<div class="video-content__button-close">
+											<svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M4.53033 1.53033C4.82322 1.23744 4.82322 0.762562 4.53033 0.469669C4.23744 0.176776 3.76256 0.176777 3.46967 0.469671L0.471748 3.4676C0.464999 3.4743 0.458376 3.48112 0.451884 3.48807C0.326651 3.6221 0.25 3.8021 0.25 4C0.25 4.1006 0.269806 4.19658 0.305734 4.28424C0.342343 4.37377 0.396989 4.45766 0.46967 4.53034L3.46967 7.53034C3.76256 7.82323 4.23744 7.82323 4.53033 7.53034C4.82322 7.23744 4.82322 6.76257 4.53033 6.46968L2.81065 4.75H19C19.4142 4.75 19.75 4.41421 19.75 4C19.75 3.58579 19.4142 3.25 19 3.25H2.81066L4.53033 1.53033Z" fill="#FCFBFD" />
+											</svg>
+											<span class="video-content__button-close-text">Видео</span>
+										</div>
+										
+										<div class="video-content__container-image-work">
+											<a href="" class="video-content__button">About case</a>
+											<img src="images/video-images/video-image.png" class="video-content__image-work" alt=""/>
+										</div>
+										<h1 class="video-content__name-work">VK Office</h1>
+										<p class="video-content__info-work info-work">
+											<span class="info-work__text">Web-view 3D Тур</span>
+										</p>
+										<div class="video-content__text">
+											Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning. 
+										</div>
+
+										<a href="#" class="video-content__button-open-project button-open-project">
+											<span class="button-open-project__text">Открыть проект</span>
+											<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.9999 0.75C13.5857 0.75 13.2499 1.08579 13.2499 1.5C13.2499 1.91421 13.5857 2.25 13.9999 2.25H17.9999C18.0746 2.25 18.1478 2.25656 18.2189 2.26913L11.5184 8.96967C11.2255 9.26256 11.2255 9.73744 11.5184 10.0303C11.8113 10.3232 12.2861 10.3232 12.579 10.0303L19.2428 3.36653C19.2475 3.41038 19.2499 3.45491 19.2499 3.5V7.5C19.2499 7.91421 19.5857 8.25 19.9999 8.25C20.4141 8.25 20.7499 7.91421 20.7499 7.5V3.5C20.7499 2.7588 20.4567 2.08609 19.9799 1.59155L19.9765 1.58807C19.4765 1.07129 18.7757 0.75 17.9999 0.75H13.9999Z" fill="#FCFBFD" />
+												<path d="M10 1.75018L9.9624 1.75018C8.31192 1.75018 7.02215 1.75017 5.99047 1.84368C4.94067 1.93883 4.08471 2.13551 3.325 2.57413C2.39008 3.1139 1.61372 3.89026 1.07394 4.82518C0.635324 5.5849 0.438642 6.44085 0.343495 7.49066C0.249991 8.52233 0.249995 9.81211 0.25 11.4626V11.5378C0.249995 13.1883 0.249991 14.478 0.343495 15.5097C0.438642 16.5595 0.635324 17.4155 1.07394 18.1752C1.61372 19.1101 2.39008 19.8865 3.325 20.4262C4.08471 20.8649 4.94067 21.0615 5.99047 21.1567C7.02214 21.2502 8.31191 21.2502 9.96237 21.2502H10.0376C11.6881 21.2502 12.9779 21.2502 14.0095 21.1567C15.0593 21.0615 15.9153 20.8649 16.675 20.4262C17.6099 19.8865 18.3863 19.1101 18.9261 18.1752C19.3647 17.4155 19.5614 16.5595 19.6565 15.5097C19.75 14.478 19.75 13.1883 19.75 11.5378V11.5002C19.75 11.086 19.4142 10.7502 19 10.7502C18.5858 10.7502 18.25 11.086 18.25 11.5002C18.25 13.1963 18.2493 14.4182 18.1626 15.3743C18.0769 16.3201 17.9119 16.9318 17.627 17.4252C17.2189 18.1321 16.6319 18.7191 15.925 19.1272C15.4316 19.412 14.8199 19.5771 13.8741 19.6628C12.918 19.7495 11.6961 19.7502 10 19.7502C8.30389 19.7502 7.08195 19.7495 6.12587 19.6628C5.1801 19.5771 4.56836 19.412 4.075 19.1272C3.36811 18.7191 2.78111 18.1321 2.37298 17.4252C2.08814 16.9318 1.92309 16.3201 1.83737 15.3743C1.75072 14.4182 1.75 13.1963 1.75 11.5002C1.75 9.80407 1.75072 8.58213 1.83737 7.62605C1.92309 6.68028 2.08814 6.06855 2.37298 5.57518C2.7811 4.86829 3.36811 4.28129 4.075 3.87316C4.56836 3.58832 5.1801 3.42327 6.12587 3.33755C7.08195 3.2509 8.30389 3.25018 10 3.25018C10.4142 3.25018 10.75 2.9144 10.75 2.50018C10.75 2.08597 10.4142 1.75018 10 1.75018Z" fill="#FCFBFD" />
+											</svg>
+										</a>
+									</div>
+								</div>
+	
+								<div class="video-content__semantic_part">
+									<div class="video-content__panel video-content__panel_no-padding">
+										<div class="video-content__panel-title">Роль</div>
+										<ul class="video-content__list-roles list-roles">
+											<li class="list-roles__item">Art-Директор</li>
+											<li class="list-roles__item">Senior UI/UX</li>
+											<li class="list-roles__item">Senior UI/UX</li>
+										</ul>
+									</div>
+	
+									<div class="video-content__panel video-content__panel_no-padding">
+										<div class="video-content__panel-title">Задача</div>
+										<div class="video-content__secondary-desc video-content__task">
+											Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning. 
+										</div>
+									</div>
+	
+									<div class="video-content__panel video-content__panel_no-padding">
+										<div class="video-content__panel-title">Решение</div>
+										<div class="video-content__secondary-desc video-content__solution">
+											Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning. 
+										</div>
+									</div>
+	
+									<div class="video-content__panel video-content__panel_no-padding">
+										<div class="video-content__panel-title">Результат</div>
+										<div class="video-content__secondary-desc video-content__result">
+											Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning. 
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--анимации wow.js-->
+		<script src="js/wow.min.js"></script>
+        <script src="js/wow.js"></script>
+
+		
+		<!--файл с массивом треков.-->
+		<script src="js/tracks.js"></script>
+		<!--файл скриптов.-->
+		<script src="js/script.js"></script>
+
+		<!--Video script-->
+		<script src="js/videos.js"></script>
+		<!--Video scripts-->
+		<script>
+			const video = new VideoPlayer('#my-video', {
+				// Начальная громкость видео от 0 до 1
+				initialVolume: '0.2',
+				// Начальное видео от 0
+				activeTrack: 0,
+
+				// переключение видеороликов
+				videoList: [
+					{
+						artvideo: "images/video-images/video-image.png",
+						name: "VK Office",
+						desc: "Web-view 3D Тур",
+						linkProject: "#url1",
+						detailedDescription: "Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning.",
+						roles: [
+							'Art-Директор',
+							'Senior UI/UX',
+							'Senior UI/UX',
+						],
+						task: 'Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning.',
+						solution: 'Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning.',
+						result: 'Deseliga monotris dodining, traktigt saskapet intradiness rar. Mikrogt suprapod egovis fuliga tibyl ude farad. Anteren klimatvänlig, sonde, ynäsk. Intrasamma söling samt begt tårysat oaktat track satunat cyngyn polysm, reasoning.',
+						path: "videos/cases/istockphoto-1.mp4",
+					},
+					{
+						artvideo: "images/video-images/video-image.png",
+						name: "Процессор",
+						desc: "Описание 2",
+						linkProject: "#url2",
+						detailedDescription: "Детальное описание 2",
+						roles: [
+							'Креативный дизайнер',
+							'Art-Директор',
+							'Senior UI/UX',
+						],
+						task: 'Оисание задачи 2',
+						solution: 'Оисание решения 2',
+						result: 'Оисание результата 2',
+						path: "videos/cases/istockphoto-2.mp4",
+					},
+					{
+						artvideo: "images/video-images/video-image.png",
+						name: "Ночной город",
+						desc: "Описание 3",
+						linkProject: "#url3",
+						detailedDescription: "Детальное описание 3",
+						roles: [
+							'Senior UI/UX',
+							'Art-Директор',
+						],
+						task: 'Оисание задачи 3',
+						solution: 'Оисание решения 3',
+						result: 'Оисание результата 3',
+						path: "videos/cases/istockphoto-3.mp4",
+					}
+				],
+
+				isPlayed: (video) => {
+					const myVideoPlayer = video.parent;
+					myVideoPlayer.classList.add('video-playing');
+
+					myVideoPlayer.addEventListener('mousemove', function(event) {
+						myVideoPlayer.classList.add('mousemove');
+						clearTimeout();
+						setTimeout(() => {
+							myVideoPlayer.classList.remove('mousemove');
+						}, 2500);
+					});
+
+					myVideoPlayer.addEventListener('touchmove', function(event) {
+						myVideoPlayer.classList.add('mousemove');
+						clearTimeout();
+						setTimeout(() => {
+							myVideoPlayer.classList.remove('mousemove');
+						}, 2500);
+					});
+
+					myVideoPlayer.addEventListener('mousedown', function(event) {
+						myVideoPlayer.classList.add('mousemove');
+						clearTimeout();
+						setTimeout(() => {
+							myVideoPlayer.classList.remove('mousemove');
+						}, 2500);
+					});
+
+					myVideoPlayer.addEventListener('touchstart', function(event) {
+						myVideoPlayer.classList.add('mousemove');
+						clearTimeout();
+						setTimeout(() => {
+							myVideoPlayer.classList.remove('mousemove');
+						}, 2500);
+					});
+				},
+
+				isPaused: (video) => {
+					const myVideoPlayer = video.parent;
+					myVideoPlayer.classList.remove('video-playing');
+				},
+
+				isEnded: (video) => {
+					video.videoPause();
+
+					const myVideoPlayer = video.parent;
+					myVideoPlayer.classList.remove('video-playing');
+				},
+			});
+		</script>
+	</body>
+</html>
